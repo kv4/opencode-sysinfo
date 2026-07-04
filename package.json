@@ -1,13 +1,19 @@
 {
   "name": "opencode-sysinfo",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "OpenCode TUI plugin that shows system info (hostname, RAM, CPU, battery) in the sidebar",
   "type": "module",
   "exports": {
-    ".": { "import": "./dist/tui.tsx" },
-    "./tui": { "import": "./dist/tui.tsx" }
+    ".": {
+      "import": "./dist/tui.tsx"
+    },
+    "./tui": {
+      "import": "./dist/tui.tsx"
+    }
   },
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "tsup && cp src/tui.tsx src/utils.ts dist/",
     "test": "bun test",
@@ -29,6 +35,12 @@
     "tsup": "^8.0.0",
     "typescript": "^5.8.0"
   },
-  "keywords": ["opencode", "plugin", "tui", "sidebar", "system-info"],
+  "keywords": [
+    "opencode",
+    "plugin",
+    "tui",
+    "sidebar",
+    "system-info"
+  ],
   "license": "MIT"
 }
