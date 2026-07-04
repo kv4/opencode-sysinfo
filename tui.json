@@ -1,0 +1,5 @@
+{
+  "plugin": [
+    "./.opencode/plugins/sidebar-info.tsx"
+  ]
+}
