@@ -2,6 +2,12 @@
 
 OpenCode TUI plugin that shows system info in the sidebar: hostname, project, RAM, CPU (with sparkline), battery status, and session duration.
 
+## Motivation
+
+I work on multiple laptops — home, office, client sites — all accessed via SSH from a single terminal. Switching between them, especially on the same project, it's easy to lose track of where you are. A quick `uname -n` helps, but it breaks flow.
+
+This plugin puts the hostname, project directory, resource usage, and battery level right in the OpenCode sidebar. At a glance, you know which machine you're on, how it's doing, and how long you've been connected. No more wondering "am I on the office laptop or the client one?"
+
 ## Example
 
 ```
