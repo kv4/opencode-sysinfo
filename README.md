@@ -1,6 +1,20 @@
-# sidebar-info
+# opencode-sysinfo
 
 OpenCode TUI plugin that shows system info in the sidebar: hostname, project, RAM, CPU (with sparkline), battery status, and session duration.
+
+## Example
+
+```
+┌─ 🖥 Env Info ──────────────┐
+│ Machine: thinkpad-x1      │
+│ Project: your-project-name│
+│ RAM: 4.2/15.6 GB          │
+│ BAT: 67% ⚡                │
+│ CPU: 14% (12 cores)       │
+│ ▁▃▂▁▁▂▄▆███▇▆▄▃▂▁▁▂▃▄     │
+│ Session: 2h 15m           │
+└───────────────────────────┘
+```
 
 ## Installation
 
@@ -8,11 +22,11 @@ Add to your `tui.json` (project root or `~/.config/opencode/tui.json`):
 
 ```json
 {
-  "plugin": ["sidebar-info"]
+  "plugin": ["opencode-sysinfo"]
 }
 ```
 
-OpenCode will auto-install the package on next startup.
+OpenCode will auto-install the package from npm on next startup.
 
 ## Requirements
 
@@ -23,9 +37,9 @@ OpenCode will auto-install the package on next startup.
 
 ```bash
 git clone <repo>
-cd sidebar-info
+cd opencode-sysinfo
 bun install
-bun test        # run tests
+bun test        # run tests (20 tests)
 bun run build   # build dist/
 ```
 
