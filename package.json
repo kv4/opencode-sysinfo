@@ -4,12 +4,12 @@
   "description": "OpenCode TUI plugin that shows system info (hostname, RAM, CPU, battery) in the sidebar",
   "type": "module",
   "exports": {
-    ".": { "import": "./dist/tui.js" },
-    "./tui": { "import": "./dist/tui.js" }
+    ".": { "import": "./dist/tui.tsx" },
+    "./tui": { "import": "./dist/tui.tsx" }
   },
   "files": ["dist"],
   "scripts": {
-    "build": "tsup",
+    "build": "tsup && cp src/tui.tsx src/utils.ts dist/",
     "test": "bun test",
     "prepublishOnly": "bun run build"
   },
