@@ -24,7 +24,11 @@ This plugin puts the hostname, project directory, resource usage, and battery le
 
 ## Installation
 
-Add to your `tui.json` (project root or `~/.config/opencode/tui.json`):
+```bash
+opencode plugin opencode-sysinfo
+```
+
+Or add to your `tui.json` manually:
 
 ```json
 {
